@@ -17,10 +17,10 @@ from flask_cors import CORS
 #################################################
 # Database Setup
 #################################################
-rds_connection_string = "immigration_cnn:@localhost:5432/migration_db"
-engine = create_engine(f'postgresql://{rds_connection_string}')
+# rds_connection_string = "immigration_cnn:@localhost:5432/migration_db"
+# engine = create_engine(f'postgresql://{rds_connection_string}')
 
-# engine = create_engine("sqlite:///Database/migration_pgdb.sqlite")
+engine = create_engine("sqlite:///migration.sqlite")
 
 # reflect an existing database into a new model
 Base = automap_base()
