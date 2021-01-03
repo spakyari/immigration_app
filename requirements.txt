@@ -7,4 +7,3 @@ numpy>=1.19.
 requests>=2.25.0
 flask_cors>=1.10.3
 datetime>=4.
-json>=3.9.1

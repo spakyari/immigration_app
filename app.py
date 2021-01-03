@@ -2,7 +2,7 @@ import numpy as np
 import datetime as dt
 import pandas as pd
 import requests
-import json
+# import json
 
 
 import sqlalchemy
@@ -17,7 +17,7 @@ from flask_cors import CORS
 #################################################
 # Database Setup
 #################################################
-# rds_connection_string = "immigration_cnn:@localhost:5432/migration_db"
+rds_connection_string = "immigration_cnn:@localhost:5432/migration_db"
 # engine = create_engine(f'postgresql://{rds_connection_string}')
 
 engine = create_engine("sqlite:///migration.sqlite")
